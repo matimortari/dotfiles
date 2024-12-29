@@ -1,0 +1,16 @@
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[user]
+	name = matheus
+	email = matheus.felipe.19rt@gmail.com
+[core]
+	editor = \"C:\\Users\\mathe\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+	autocrlf = false
+	pager = less -+X
+[color]
+	ui = auto
+[safe]
+	directory = C:/
