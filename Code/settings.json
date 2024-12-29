@@ -1,0 +1,82 @@
+{
+	// Base Settings
+	"workbench.colorTheme": "GitHub Dark Default",
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.startupEditor": "newUntitledFile",
+	"workbench.layoutControl.enabled": false,
+	"terminal.integrated.persistentSessionReviveProcess": "never",
+	"files.restoreUndoStack": false,
+	"files.eol": "\n",
+	"editor.minimap.enabled": false,
+	"editor.stickyScroll.enabled": false,
+	"editor.linkedEditing": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "always",
+		"source.fixAll.format": "always",
+		"source.organizeImports": "always"
+	},
+	"editor.tabSize": 2,
+	"editor.rulers": [120, 120],
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"explorer.sortOrder": "type",
+	"explorer.compactFolders": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		".env.local": ".env.*",
+		"package.json": "package-lock.json",
+		"go.mod": "go.sum",
+		"tsconfig.json": "*d.ts",
+		"README.md": "*.md"
+	},
+
+	// Other Settings
+	"css.lint.unknownAtRules": "ignore",
+	"git.confirmSync": false,
+	"git.enableSmartCommit": true,
+	"git.openRepositoryInParentFolders": "always",
+	"github.copilot.enable": {
+		"markdown": true,
+		"comment": true
+	},
+	"prettier.printWidth": 120,
+	"prettier.useTabs": true,
+	"prettier.trailingComma": "none",
+	"prettier.singleQuote": false,
+	"prettier.semi": false,
+	"eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact", "html", "json"],
+	"makefile.configureOnOpen": true,
+
+	// File-specific Formatting
+	"[python]": {
+		"editor.defaultFormatter": "charliermarsh.ruff"
+	},
+	"[go]": {
+		"editor.defaultFormatter": "golang.go"
+	},
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma"
+	},
+	"[sql]": {
+		"editor.defaultFormatter": "mtxr.sqltools"
+	},
+	"[css]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[php]": {
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+	},
+	"[md]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+
+	// SQLTools
+	"sqltools.autoOpenSessionFiles": false,
+	"sqltools.connectionExplorer.groupConnected": true,
+	"sqltools.format": {
+		"linesBetweenQueries": 2
+	}
+}
