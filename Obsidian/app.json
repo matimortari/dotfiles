@@ -1,0 +1,11 @@
+{
+	"spellcheck": true,
+	"tabSize": 2,
+	"promptDelete": false,
+	"alwaysUpdateLinks": true,
+	"defaultViewMode": "preview",
+	"showLineNumber": false,
+	"showRibbon": true,
+	"showInlineTitle": true,
+	"newFileLocation": "folder"
+}
