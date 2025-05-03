@@ -1,0 +1,100 @@
+{
+	/* Base Settings */
+	"workbench.colorTheme": "GitHub Dark Default",
+	"workbench.iconTheme": "vscode-icons",
+	"workbench.startupEditor": "none",
+	"terminal.integrated.persistentSessionReviveProcess": "never",
+	"files.restoreUndoStack": false,
+	"files.eol": "\n",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+	"editor.rulers": [120, 120],
+	"editor.minimap.enabled": false,
+	"editor.stickyScroll.enabled": false,
+	"editor.linkedEditing": true,
+	"editor.formatOnPaste": true,
+	"editor.formatOnSave": true,
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": "always",
+		"source.organizeImports": "always"
+	},
+	"editor.tabSize": 2,
+	"explorer.sortOrder": "type",
+	"explorer.confirmDragAndDrop": false,
+	"explorer.confirmDelete": false,
+	"explorer.compactFolders": false,
+	"explorer.fileNesting.enabled": true,
+	"explorer.fileNesting.patterns": {
+		".env.local": ".env.*",
+		"package.json": "package-lock.json",
+		"go.mod": "go.sum",
+		"tsconfig.json": "*d.ts",
+		"README.md": "*.md"
+	},
+
+	/* Other Settings */
+	"css.lint.unknownAtRules": "ignore",
+	"git.enableSmartCommit": true,
+	"git.confirmSync": false,
+	"github.copilot.enable": {
+		"*": true,
+		"plaintext": true,
+		"markdown": true,
+		"scminput": false
+	},
+	"prettier.printWidth": 120,
+	"prettier.useTabs": true,
+	"prettier.trailingComma": "none",
+	"prettier.quoteProps": "consistent",
+	"prettier.singleQuote": false,
+	"prettier.bracketSameLine": false,
+	"prettier.semi": false,
+	"makefile.configureOnOpen": true,
+
+	/* File-specific Formatters */
+	"[go]": {
+		"editor.defaultFormatter": "golang.go"
+	},
+	"[go.mod]": {
+		"editor.defaultFormatter": "golang.go"
+	},
+	"[python]": {
+		"editor.defaultFormatter": "charliermarsh.ruff"
+	},
+	"[php]": {
+		"editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+	},
+	"[prisma]": {
+		"editor.defaultFormatter": "Prisma.prisma"
+	},
+	"[sql]": {
+		"editor.defaultFormatter": "mtxr.sqltools"
+	},
+
+	/* VSCode Icons */
+	"vsicons.associations.folders": [
+		{ "icon": "", "extensions": ["icons", "ui"] },
+		{ "icon": "controller", "extensions": ["api"] },
+		{ "icon": "helper", "extensions": ["app"] },
+		{ "icon": "json", "extensions": ["data"] },
+		{ "icon": "tools", "extensions": ["lib"] },
+		{ "icon": "api", "extensions": ["services"] },
+		{ "icon": "css", "extensions": ["styles"] }
+	],
+	"vsicons.associations.files": [
+		{ "icon": "manifest", "extensions": [".env.local", ".env.production"], "filename": true },
+		{ "icon": "robots", "extensions": ["robots.ts"], "filename": true },
+		{ "icon": "xml", "extensions": ["sitemap.ts"], "filename": true },
+		{ "icon": "php3", "extensions": ["php"] },
+		{ "icon": "toml", "extensions": ["toml"] },
+		{ "icon": "pdf2", "extensions": ["pdf"] }
+	],
+
+	/* SQLTools */
+	"sqltools.highlightQuery": true,
+	"sqltools.autoOpenSessionFiles": false,
+	"sqltools.defaultExportType": "csv",
+	"sqltools.format": {
+		"reservedWordCase": "upper",
+		"linesBetweenQueries": 2
+	}
+}
