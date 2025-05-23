@@ -1,0 +1,106 @@
+{
+  /* Base Settings */
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.navigationControl.enabled": false,
+  "workbench.startupEditor": "none",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
+  },
+  "editor.linkedEditing": true,
+  "editor.minimap.enabled": false,
+  "editor.rulers": [120, 120],
+  "editor.stickyScroll.enabled": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    ".env*": ".env.*",
+    "go.mod": "go.sum",
+    "package.json": "package-lock.json",
+    "README.md": "*.md",
+    "tsconfig.json": "tsconfig.*.json, *.d.ts"
+  },
+  "explorer.sortOrder": "type",
+  "files.restoreUndoStack": false,
+  "chat.commandCenter.enabled": false,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "css.lint.unknownAtRules": "ignore",
+  "liveServer.settings.donotShowInfoMsg": true,
+  "makefile.configureOnOpen": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "github.copilot.enable": {
+    "*": true,
+    "markdown": true,
+    "plaintext": true
+  },
+
+  /* File-specific Formatters */
+  "[go]": { "editor.defaultFormatter": "golang.go", "editor.formatOnSave": true },
+  "[go.mod]": { "editor.defaultFormatter": "golang.go", "editor.formatOnSave": true },
+  "[prisma]": { "editor.defaultFormatter": "Prisma.prisma", "editor.formatOnSave": true },
+  "[python]": { "editor.defaultFormatter": "charliermarsh.ruff", "editor.formatOnSave": true },
+  "[sql]": { "editor.defaultFormatter": "mtxr.sqltools", "editor.formatOnSave": true },
+  "[vue]": { "editor.defaultFormatter": "Vue.volar" },
+
+  /* ESLint */
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown",
+    "json",
+    "jsonc",
+    "yaml",
+    "toml",
+    "xml",
+    "css"
+  ],
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off", "fixable": true },
+    { "rule": "format/*", "severity": "off", "fixable": true },
+    { "rule": "*-indent", "severity": "off", "fixable": true },
+    { "rule": "*-spacing", "severity": "off", "fixable": true },
+    { "rule": "*-spaces", "severity": "off", "fixable": true },
+    { "rule": "*-order", "severity": "off", "fixable": true },
+    { "rule": "*-dangle", "severity": "off", "fixable": true },
+    { "rule": "*-newline", "severity": "off", "fixable": true },
+    { "rule": "*quotes", "severity": "off", "fixable": true },
+    { "rule": "*semi", "severity": "off", "fixable": true }
+  ],
+
+  /* SQLTools */
+  "sqltools.autoOpenSessionFiles": false,
+  "sqltools.highlightQuery": true,
+  "sqltools.defaultExportType": "csv",
+  "sqltools.format": {
+    "linesBetweenQueries": 2,
+    "reservedWordCase": "upper"
+  },
+
+  /* VSCode Icons */
+  "vsicons.associations.files": [
+    { "extensions": [".env", ".env.local", ".env.production"], "filename": true, "icon": "manifest" },
+    { "extensions": ["robots.ts"], "filename": true, "icon": "robots" },
+    { "extensions": ["sitemap.ts"], "filename": true, "icon": "xml" },
+    { "extensions": ["php"], "icon": "php3" },
+    { "extensions": ["toml"], "icon": "toml" },
+    { "extensions": ["pdf"], "icon": "pdf2" }
+  ],
+  "vsicons.associations.folders": [
+    { "extensions": ["icons", "ui"], "icon": "" },
+    { "extensions": ["services"], "icon": "api" },
+    { "extensions": ["api"], "icon": "controller" },
+    { "extensions": ["style", "styles"], "icon": "css" },
+    { "extensions": [".output"], "icon": "dist" },
+    { "extensions": ["composables"], "icon": "helper" },
+    { "extensions": ["app", "layouts"], "icon": "template" },
+    { "extensions": ["lib"], "icon": "tools" }
+  ]
+}
