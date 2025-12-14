@@ -1,0 +1,99 @@
+{
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.activityBar.location": "top",
+  "workbench.startupEditor": "none",
+  "workbench.colorCustomizations": {
+    "focusBorder": "#00000000",
+    "activityBarBadge.background": "#4d9375"
+  },
+  "explorer.sortOrder": "type",
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.patterns": {
+    "README.md": "LICENSE, CONTRIBUTING.md, CHANGELOG.md, CODE_OF_CONDUCT.md",
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lock, .npmrc, .yarnrc, .yarnrc.yml, .pnpmfile.cjs",
+    "go.mod": "go.sum, go.work",
+    "tsconfig.json": "tsconfig.*.json",
+    "compose.yml": "compose.*.yml, docker-compose.*.yml, .dockerignore, Dockerfile*",
+    ".env": ".env.*"
+  },
+  "editor.fontFamily": "Cascadia Mono",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorBlinking": "smooth",
+  "editor.rulers": [120],
+  "editor.tabSize": 2,
+  "editor.stickyScroll.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.linkedEditing": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.codeActionsOnSave": { "source.fixAll": "explicit" },
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "terminal.integrated.initialHint": false,
+  "terminal.integrated.stickyScroll.enabled": false,
+  "window.commandCenter": false,
+  "breadcrumbs.symbolPath": "off",
+  "css.lint.unknownAtRules": "ignore",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "prisma.pinToPrisma6": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.enable": { "*": true, "plaintext": true, "markdown": true, "scminput": true },
+
+  /* Language-specific Settings */
+  "[go]": { "editor.defaultFormatter": "golang.go", "editor.formatOnSave": true },
+  "[go.mod]": { "editor.defaultFormatter": "golang.go", "editor.formatOnSave": true },
+  "[prisma]": { "editor.defaultFormatter": "Prisma.prisma", "editor.formatOnSave": true },
+  "[sql]": { "editor.defaultFormatter": "mtxr.sqltools", "editor.formatOnSave": true },
+  "[vue]": { "editor.defaultFormatter": "Vue.volar" },
+
+  /* ESLint */
+  "eslint.validate": [ "javascript", "typescript", "javascriptreact", "typescriptreact", "vue", "html", "css", "markdown", "json", "jsonc", "xml", "yaml", "toml" ],
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off", "fixable": true },
+    { "rule": "format/*", "severity": "off", "fixable": true },
+    { "rule": "*-indent", "severity": "off", "fixable": true },
+    { "rule": "*-spacing", "severity": "off", "fixable": true },
+    { "rule": "*-spaces", "severity": "off", "fixable": true },
+    { "rule": "*-order", "severity": "off", "fixable": true },
+    { "rule": "*-dangle", "severity": "off", "fixable": true },
+    { "rule": "*-newline", "severity": "off", "fixable": true },
+    { "rule": "*quotes", "severity": "off", "fixable": true },
+    { "rule": "*semi", "severity": "off", "fixable": true }
+  ],
+
+  /* VSCode Icons */
+  "vsicons.associations.folders": [
+    { "extensions": ["icons", "ui"], "icon": "" },
+    { "extensions": ["content"], "icon": "docs" },
+    { "extensions": ["server"], "icon": "www" },
+    { "extensions": ["layouts"], "icon": "template" },
+    { "extensions": ["composables"], "icon": "helper" },
+    { "extensions": ["services"], "icon": "controller" },
+    { "extensions": ["stores"], "icon": "model" },
+    { "extensions": ["schemas"], "icon": "json" },
+    { "extensions": ["cmd"], "icon": "script" }
+  ],
+
+  /* SQLTools */
+  "sqltools.autoOpenSessionFiles": false,
+  "sqltools.highlightQuery": true,
+  "sqltools.defaultExportType": "csv",
+  "sqltools.format": { "linesBetweenQueries": 2, "reservedWordCase": "upper" },
+  "sqltools.connections": [
+    {
+      "name": "",
+      "driver": "",
+      "database": "",
+      "username": "",
+      "password": "",
+      "server": "",
+      "port": 5432
+    }
+  ]
+}
