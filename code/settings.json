@@ -1,0 +1,110 @@
+{
+  "workbench.colorTheme": "GitHub Dark Default",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.activityBar.location": "top",
+  "workbench.startupEditor": "none",
+  "workbench.colorCustomizations": {
+    "focusBorder": "#00000000",
+    "activityBarBadge.background": "#4d9375"
+  },
+  "window.commandCenter": false,
+  "explorer.compactFolders": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.sortOrder": "type",
+  "explorer.fileNesting.enabled": true,
+  "explorer.fileNesting.expand": false,
+  "explorer.fileNesting.patterns": {
+    "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lock, .npmrc, .yarnrc.yml, .pnpmfile.cjs",
+    "tsconfig.json": "tsconfig.*.json",
+    "cargo.toml": "cargo.lock, rust-toolchain.toml",
+    "go.mod": "go.sum, go.work",
+    "docker-compose.yml": "docker-compose.*.yml, .dockerignore, Dockerfile*",
+    "README.md": "LICENSE, CONTRIBUTING.md, CHANGELOG.md, CODE_OF_CONDUCT.md",
+    ".gitignore": ".gitattributes, .gitmodules, .gitmessage",
+    ".env": ".env.*"
+  },
+  "breadcrumbs.symbolPath": "off",
+  "editor.fontFamily": "Cascadia Mono",
+  "editor.cursorBlinking": "solid",
+  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.rulers": [120],
+  "editor.tabSize": 2,
+  "editor.linkedEditing": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.stickyScroll.enabled": false,
+  "editor.minimap.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit"
+  },
+  "terminal.integrated.stickyScroll.enabled": false,
+  "terminal.integrated.persistentSessionReviveProcess": "never",
+  "extensions.ignoreRecommendations": true,
+  "css.lint.unknownAtRules": "ignore",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true,
+  "prisma.pinToPrisma6": true,
+  "git.confirmSync": false,
+  "git.enableSmartCommit": true,
+  "github.copilot.nextEditSuggestions.enabled": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": true,
+    "markdown": true,
+    "scminput": true
+  },
+
+  /* Language-specific Settings */
+  "[go]": { "editor.defaultFormatter": "golang.go", "editor.formatOnSave": true },
+  "[go.mod]": { "editor.defaultFormatter": "golang.go", "editor.formatOnSave": true },
+  "[prisma]": { "editor.defaultFormatter": "Prisma.prisma", "editor.formatOnSave": true },
+  "[sql]": { "editor.defaultFormatter": "mtxr.sqltools", "editor.formatOnSave": true },
+  "[vue]": { "editor.defaultFormatter": "Vue.volar" },
+
+  /* ESLint */
+  "eslint.validate": [ "javascript", "typescript", "javascriptreact", "typescriptreact", "vue", "html", "css", "markdown", "json", "jsonc", "xml", "yaml", "toml" ],
+  "eslint.rules.customizations": [
+    { "rule": "style/*", "severity": "off", "fixable": true },
+    { "rule": "format/*", "severity": "off", "fixable": true },
+    { "rule": "*-indent", "severity": "off", "fixable": true },
+    { "rule": "*-spacing", "severity": "off", "fixable": true },
+    { "rule": "*-spaces", "severity": "off", "fixable": true },
+    { "rule": "*-order", "severity": "off", "fixable": true },
+    { "rule": "*-dangle", "severity": "off", "fixable": true },
+    { "rule": "*-newline", "severity": "off", "fixable": true },
+    { "rule": "*quotes", "severity": "off", "fixable": true },
+    { "rule": "*semi", "severity": "off", "fixable": true }
+  ],
+
+  /* VSCode Icons */
+  "vsicons.associations.folders": [
+    { "extensions": ["icons", "ui"], "icon": "" },
+    { "extensions": ["content"], "icon": "docs" },
+    { "extensions": ["server"], "icon": "www" },
+    { "extensions": ["layouts"], "icon": "template" },
+    { "extensions": ["composables"], "icon": "helper" },
+    { "extensions": ["services"], "icon": "controller" },
+    { "extensions": ["stores"], "icon": "model" },
+    { "extensions": ["schemas"], "icon": "json" },
+    { "extensions": ["cmd"], "icon": "script" }
+  ],
+
+  /* SQLTools */
+  "sqltools.autoOpenSessionFiles": false,
+  "sqltools.highlightQuery": true,
+  "sqltools.defaultExportType": "csv",
+  "sqltools.format": { "linesBetweenQueries": 2, "reservedWordCase": "upper" },
+  "sqltools.connections": [
+    {
+      "name": "",
+      "driver": "",
+      "database": "",
+      "username": "",
+      "password": "",
+      "server": "",
+      "port": 5432
+    }
+  ]
+}
